@@ -43,21 +43,21 @@ width  = 6
 enemyFreq = 8
 
 rightEnemy, leftEnemy, leftCar, rightCar :: Car
-leftEnemy = S.fromList [  V2 1 (height - 1)
-                        , V2 0 (height - 2)
-                        , V2 1 (height - 2)
-                        , V2 2 (height - 2)
-                        , V2 1 (height - 3)
-                        , V2 0 (height - 4)
-                        , V2 2 (height - 4)]
+leftEnemy = S.fromList [  V2 1 (height + 2)
+                        , V2 0 (height + 1)
+                        , V2 1 (height + 1)
+                        , V2 2 (height + 1)
+                        , V2 1  height
+                        , V2 0 (height - 1)
+                        , V2 2 (height - 1)]
 
-rightEnemy = S.fromList [ V2 4 (height - 1)
-                       , V2 3 (height - 2)
-                       , V2 4 (height - 2)
-                       , V2 5 (height - 2)
-                       , V2 4 (height - 3)
-                       , V2 3 (height - 4)
-                       , V2 5 (height - 4)]
+rightEnemy = S.fromList [ V2 4 (height + 2)
+                       , V2 3 (height + 1)
+                       , V2 4 (height + 1)
+                       , V2 5 (height + 1)
+                       , V2 4  height
+                       , V2 3 (height - 1)
+                       , V2 5 (height - 1)]
 
 leftCar = S.fromList [ V2 1 5
                      , V2 0 4
